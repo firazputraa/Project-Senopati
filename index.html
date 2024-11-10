@@ -22,22 +22,26 @@
                         <span class="hamburger-line transition duration-300 ease-in-out"></span>
                         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                     </button>
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-nav rounded-lg max-w-[250px] w-full right-4 top-full text-font lg:block lg:static lg:max-w-full">
-                        <ul class="block lg:flex md:flex">
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-nav rounded-lg max-w-[250px] w-full right-2 top-full text-font lg:block lg:static lg:max-w-full">
+                        <ul class="block lg:flex">
                             <li class="group">
-                                <a href="index.html" class="text-lg py-1 mx-8 flex border-b-4 border-transparent hover:border-font transition duration-300 rounded-lg">Home</a>
+                                <a href="index.html" class="text-lg py-1 mx-8 flex border-b-2 border-transparent hover:border-font transition duration-300 rounded-lg">Home</a>
+                            </li>
+                            <li class="relative group">
+                                <a id="about-button" href="index.html" class="text-lg py-1 mx-8 flex border-b-2 border-transparent hover:border-font transition duration-300 rounded-lg">
+                                    About
+                                </a>
+                                <div id="about-dropdown" class="dropdown-content absolute hidden group-hover:block bg-nav shadow-lg rounded-md pb-1 -mr-20">
+                                    <a href="#" class="block px-4 py-2 pl-8 text-font border-b-2 border-transparent hover:border-font transition duration-300 rounded-lg">Visi</a>
+                                    <a href="#" class="block px-4 py-2 pl-8 text-font border-b-2 border-transparent hover:border-font transition duration-300 rounded-lg">Misi</a>
+                                    <a href="#" class="block px-4 py-2 pl-8 text-font border-b-2 border-transparent hover:border-font transition duration-300 rounded-lg">Service</a>
+                                </div>
                             </li>
                             <li class="group">
-                                <a href="index.html" class="text-lg py-1 mx-8 flex border-b-4 border-transparent hover:border-font transition duration-300 rounded-lg">About</a>
+                                <a href="index.html" class="text-lg py-1 mx-8 flex border-b-2 border-transparent hover:border-font transition duration-300 rounded-lg">Partner</a>
                             </li>
                             <li class="group">
-                                <a href="index.html" class="text-lg py-1 mx-8 flex border-b-4 border-transparent hover:border-font transition duration-300 rounded-lg">Partner</a>
-                            </li>
-                            <li class="group">
-                                <a href="index.html" class="text-lg py-1 mx-8 flex border-b-4 border-transparent hover:border-font transition duration-300 rounded-lg">Services</a>
-                            </li>
-                            <li class="group">
-                                <a href="index.html" class="text-lg py-1 mx-8 flex border-b-4 border-transparent hover:border-font transition duration-300 rounded-lg">Contact</a>
+                                <a href="index.html" class="text-lg py-1 mx-8 flex border-b-2 border-transparent hover:border-font transition duration-300 rounded-lg">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -46,8 +50,11 @@
         </div>
     </header>
 
-
-
+    <main>        
+        <section>
+            <h1>Trusted Partner for Your Logistics and Heavy Equipment Expedition Solutions</h1>
+        </section>
+    </main>
 
     <script src="dist/script.js"></script>
 </body>
