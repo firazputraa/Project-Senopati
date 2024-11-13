@@ -16,6 +16,10 @@ module.exports = {
           to: {transform: "translateX(-100%)"},
         },
       },
+      screens:{
+        'IphoneSE':'375px',
+        'IphoneXR':'414px',
+      },
       colors: {
         font: '#fff000',
         nav: '#1e3a8a',
