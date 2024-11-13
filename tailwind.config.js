@@ -8,7 +8,7 @@ module.exports = {
     },
     extend: {
       animation:{
-        "loop-scroll": "loop-scroll 40s linear infinite"
+        "loop-scroll": "loop-scroll 50s linear infinite"
       },
       keyframes:{
         "loop-scroll":{
@@ -20,6 +20,7 @@ module.exports = {
         font: '#fff000',
         nav: '#1e3a8a',
         latar: '#3e6b98',
+        
       },
       fontFamily:{
         logo:['Bridone'],
