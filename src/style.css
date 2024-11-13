@@ -19,3 +19,8 @@ html{
 .hamburger-active > span:nth-child(3){
     @apply -rotate-45;
 }
+
+html,body{
+    overflow-x: hidden;
+    max-width: 100%;
+}
