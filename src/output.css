@@ -612,16 +612,8 @@ video {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .left-0 {
   left: 0px;
-}
-
-.right-2 {
-  right: 0.5rem;
 }
 
 .right-4 {
@@ -756,8 +748,8 @@ video {
   width: 50%;
 }
 
-.w-2\/4 {
-  width: 50%;
+.w-3\/4 {
+  width: 75%;
 }
 
 .w-\[136px\] {
@@ -811,7 +803,7 @@ video {
 }
 
 .animate-loop-scroll {
-  animation: loop-scroll 50s linear infinite;
+  animation: loop-scroll 10s linear infinite;
 }
 
 .flex-wrap {
@@ -1262,7 +1254,7 @@ html,body{
   }
 
   .sm\:animate-loop-scroll {
-    animation: loop-scroll 50s linear infinite;
+    animation: loop-scroll 10s linear infinite;
   }
 
   .sm\:space-x-16 > :not([hidden]) ~ :not([hidden]) {
@@ -1355,6 +1347,10 @@ html,body{
     width: 25%;
   }
 
+  .lg\:w-2\/4 {
+    width: 50%;
+  }
+
   .lg\:w-60 {
     width: 15rem;
   }
@@ -1385,9 +1381,9 @@ html,body{
     padding-left: 7rem;
   }
 
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lg\:text-4xl {
