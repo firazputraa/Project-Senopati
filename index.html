@@ -7,20 +7,24 @@
 
     <link href="src/output.css" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <!-- animate on scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- animate on scroll -->
 
 </head>
 
-<body class="bg-latar bg-opacity-25 ">
+<body>
     <!-- Navbar start -->
     <header class="bg-nav relative top-0 left-0 w-full flex items-center z-10 pb-2">
         <div class="container mx-auto">
             <div class="items-center relative justify-between flex">
                 <div class="px-4 justify-between flex">
                     <img src="img/logo fix.png" alt="Logo Senopati Inti Artha" class="w-25 h-10 mt-4">
-                    <a href="index.html" class="font-logo text-lg text-font pt-4 ">SENOPATI INTI ARTHA</a>
+                    <a href="index.html" class="font-custom text-lg text-font pt-4">SENOPATI INTI ARTHA</a>
                 </div>
                 <div class="flex justify-between items-center px-4">
                     <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
@@ -29,29 +33,29 @@
                         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                     </button>
 
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-nav rounded-lg max-w-[250px] w-full right-4 top-full text-font lg:block lg:static lg:max-w-full">
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-nav rounded-lg max-w-[250px] w-full right-4 top-full text-font lg:block lg:static lg:max-w-full poppins-light">
                         <ul class="block lg:flex">
 
                             <li class="group">
                                 <a href="index.html" class="text-lg py-1 mx-8 flex border-b-2 border-transparent hover:border-font transition duration-300 rounded-lg">Home</a>
                             </li>
 
+                            <li class="group">
+                                <a href="#Services" class="text-lg py-1 mx-8 flex border-b-2 border-transparent hover:border-font transition duration-300 rounded-lg">Services</a>
+                            </li>
+                            
                             <li class="relative group">
-                                <a href="About" class="text-lg py-1 mx-8 flex border-b-2 border-transparent hover:border-font transition duration-300 rounded-lg">About</a>
+                                <a href="#About" class="text-lg py-1 mx-8 flex border-b-2 border-transparent hover:border-font transition duration-300 rounded-lg">About</a>
+                            </li>
+
+
+                            <li class="group">
+                                <a href="#Partner" class="text-lg py-1 mx-8 flex border-b-2 border-transparent hover:border-font transition duration-300 rounded-lg">Partner</a>
                             </li>
 
                             <li class="group">
-                                <a href="Partner" class="text-lg py-1 mx-8 flex border-b-2 border-transparent hover:border-font transition duration-300 rounded-lg">Partner</a>
+                                <a href="#Contact" class="text-lg py-1 mx-8 flex border-b-2 border-transparent hover:border-font transition duration-300 rounded-lg">Contact</a>
                             </li>
-
-                            <li class="group">
-                                <a href="Service" class="text-lg py-1 mx-8 flex border-b-2 border-transparent hover:border-font transition duration-300 rounded-lg">Services</a>
-                            </li>
-
-                            <li class="group">
-                                <a href="Contact" class="text-lg py-1 mx-8 flex border-b-2 border-transparent hover:border-font transition duration-300 rounded-lg">Contact</a>
-                            </li>
-
                         </ul>
                     </nav>
                 </div>
@@ -61,10 +65,10 @@
     <!-- navbar end -->
 
     <!-- landing page -->
-    <section id="Home" class="bg-cover bg-center h-[850px] bg-no-repeat justify-center" style=" background-image: url(img/landing.png);">
+    <section id="Home" class="bg-cover bg-center h-[850px] bg-no-repeat justify-center" style=" background-image: url(img/landing.webp);">
         <div class="container">
             <div class="flex flex-wrap">
-                <div class="justify-center pl-14 pt-80 w-3/4 lg:w-2/4">
+                <div class="justify-center pl-14 pt-80 w-3/4 lg:w-2/4 poppins-medium">
                     <h1 class="text-xl font-bold text-font px-auto text-left lg:text-4xl md:text-3xl" data-aos="fade-right" data-aos-duration="2000">Trusted Solution for Your Logistics and Heavy Equipment Delivery</h1>
                     <h2 class="text-lg font-semibold text-white px-auto text-left lg:text-2xl md:text-2xl" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000">which provides safe, precise and efficient services, and also maintains the quality of its human resources</h2>
                     <button class="text-font bg-nav font-semibold p-3 rounded-full hover:bg-opacity-65 mt-5 flex justify-center lg:text-xl md:text-lg sm:text-xs sm:w-40 md:w-52 lg:w-60" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000"><a href="#Contact">Contact Us</a></button>
@@ -74,52 +78,26 @@
     </section>
     <!-- landing page end -->
 
-    <!-- about start -->
-    <section id="About">
-        <div class="container mx-auto">
-            <div class="shadow-xl rounded-lg p-6 mt-36 md:flex md:items-center md:gap-6">
-                <div class="md:w-1/3" data-aos="fade-right" data-aos-duration="2000">
-                    <img src="img/about.png" alt="">
-                </div>
-                <div class="md:w-2/3 mt-6 md:mt-0" data-aos="fade-left" data-aos-duration="2000">
-                    <h2 class="font-semibold text-4xl uppercase mb-5 text-center">About Us</h2>
-                    <p class="font-normal text-lg text-justify">We are a logistics company PT. Senopati Inti Artha was founded in 2024 with its head office in Jakarta. PT Senopati Inti Artha was founded by founders Abdul Rasyid and Diding Purwianto. <br> Armed with a logistics team that is experienced in its field, PT Senopati Inti Artha was established to be able to fulfill a wider distribution segmentation of consigned goods with the various services provided. <br> As client trust continues to increase, this company has begun to increase the number of its truck fleet and expand its delivery reach to various regions throughout Indonesia with competitive prices and the services we continue to provide optimally. <br> Apart from delivering goods in the Java - Bali region, PT Senopati Inti Artha can also distribute the relocation of household goods, work support tools for office areas, factories, warehouses and heavy equipment to various areas on the island of Kalimantan, Sulawesi, and Sumatra</p>
-                </div>
-            </div>
-            <div class="flex flex-wrap lg:space-x-16 mt-20">
-                <div class="text-center mb-10 w-full p-10 :w-1/2 lg:max-w-[700px] border rounded-lg shadow-lg" data-aos="fade-down" data-aos-duration="2000">
-                    <h2 class="font-semibold text-4xl uppercase">Vision</h2>
-                    <p class="mt-4 text-justify font-normal text-lg">To become a leading trucking company known for integrity, quality and innovation, by providing high-quality services that meet and exceed customer expectations. We are committed to being a reliable partner who prioritizes customer satisfaction and creates added value for all stakeholders.</p>
-                    </div>
-                <div class="text-center mb-10 w-full p-10 lg:max-w-[700px] lg:w-1/2 border rounded-lg shadow-lg" data-aos="fade-down" data-aos-duration="2000">
-                    <h2 class="font-semibold text-4xl uppercase">Mission</h2>
-                    <p class="mt-4 text-justify font-normal text-lg">Providing safe and efficient delivery services by maintaining high quality standards through human resource development, building long-term relationships with customers, utilizing technology for efficiency and sustainability, and optimizing profits ethically and professionally.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- about end -->
-
     <!-- service start -->
     <section id="Services">
         <div class="container">
             <div class="px-4">
-                <div class="max-w-xl mx-auto text-center mt-36 mb-16">
-                    <h4 class="font-semibold uppercase text-secondary text-4xl mb-4">Services</h4>
+                <div class="max-w-xl mx-auto text-center mt-36 pt-28">
+                    <h4 class="font-semibold text-secondary text-3xl mb-4 font-kata text-nav poppins-medium">Services</h4>
                 </div>
                 <div class="w-full px-5 flex flex-wrap justify-around xl:w-10/12 xl:mx-auto">
                     <div class="mb-12 p-4 md:w-1/3" data-aos="zoom-in" data-aos-duration="2000">
-                        <div class="rounded-lg shadow-xl overflow-hidden border-4">
-                            <img src="img/Trucking Barang.webp" alt="Trucking" class="w-full">
-                            <h3 class="font-semibold text-2xl text-line mt-6 mb-2 text-center">Trucking</h3>
-                            <p class="font-normal text-base text-line p-5">Goods transportation services using trucks with various types of trucks. Starting from CDD, CDD Long, Fuso, and Wingbox</p>
+                        <div class="overflow-hidden border-4 shadow-lg rounded-tl-[8rem] rounded-br-[8rem]">
+                            <img src="img/Trucking Barang.webp" alt="Trucking" class="w-full rounded-tl-[8rem] rounded-br-[8rem]">
+                            <h3 class="font-semibold text-2xl text-line mt-6 mb-2 text-center text-nav poppins-regular">Trucking</h3>
+                            <p class="font-normal text-base text-line p-5 text-nav poppins-light">Goods transportation services using trucks with various types of trucks. Starting from CDD, CDD Long, Fuso, and Wingbox</p>
                         </div>
                     </div>
                     <div class="mb-12 p-4 md:w-1/3 " data-aos="zoom-in" data-aos-duration="2000">
-                        <div class="rounded-lg shadow-xl overflow-hidden border-4">
-                            <img src="img/Heavy Cargo.webp" alt="Heavy Cargo" class="w-full" >
-                            <h3 class="font-semibold text-2xl text-line mt-6 mb-2 text-center ">Heavy Cargo</h3>
-                            <p class="font-normal text-base text-line p-5">Heavy goods transportation services, ranging from industrial machines, heavy equipment using special vehicles such as trailers, highbeds, lowbeds</p>
+                        <div class="overflow-hidden border-4 shadow-lg rounded-tl-[8rem] rounded-br-[8rem]">
+                            <img src="img/Heavy Cargo.webp" alt="Heavy Cargo" class="w-full rounded-tl-[8rem] rounded-br-[8rem]">
+                            <h3 class="font-semibold text-2xl text-line mt-6 mb-2 text-center text-nav poppins-regular">Heavy Cargo</h3>
+                            <p class="font-normal text-base text-line p-5 text-nav poppins-light">Heavy goods transportation services, ranging from industrial machines, heavy equipment using special vehicles such as trailers, highbeds, lowbeds</p>
                         </div>
                     </div>
                 </div>
@@ -127,14 +105,32 @@
         </div>
     </section>
     <!-- service end -->
+    
+    <!-- about start -->
+    <section id="About" class="bg-blue-100 bg-opacity-30 p-5">
+        <div class="container mx-auto">
+            <div class="shadow-xl rounded-lg p-6 mt-36 md:flex md:items-center md:gap-6">
+                <div class="md:w-1/3" data-aos="fade-right" data-aos-duration="2000">
+                    <img src="img/about.png" alt="" class="">
+                </div>
+                <div class="md:w-2/3 mt-6 md:mt-0 text-nav" data-aos="fade-left" data-aos-duration="2000">
+                    <h2 class="font-semibold text-3xl mb-5 text-center font-kata poppins-medium">About Us</h2>
+                    <p class="font-normal text-lg text-justify poppins-regular">We are a logistics company PT. Senopati Inti Artha was founded in 2024 with its head office in Jakarta. PT Senopati Inti Artha was founded by founders Abdul Rasyid and Diding Purwianto. <br> Armed with a logistics team that is experienced in its field, PT Senopati Inti Artha was established to be able to fulfill a wider distribution segmentation of consigned goods with the various services provided. <br> As client trust continues to increase, this company has begun to increase the number of its truck fleet and expand its delivery reach to various regions throughout Indonesia with competitive prices and the services we continue to provide optimally. <br> Apart from delivering goods in the Java - Bali region, PT Senopati Inti Artha can also distribute the relocation of household goods, work support tools for office areas, factories, warehouses and heavy equipment to various areas on the island of Kalimantan, Sulawesi, and Sumatra</p>
+                    <button class="poppins-regular mt-4 bg-nav text-font p-3 rounded-full shadow-lg hover:bg-opacity-30 hover:text-nav sm:text-base md:text-lg lg:text-xl"><a href="about.html">In full...</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about end -->
+
 
 
     <section id="Partner">
-        <div class="container p-5">
-            <div class="max-w-xl mx-auto text-center pt-36 mb-16">
-                <h4 class="font-semibold uppercase text-secondary text-4xl mb-4">Partner</h4>
+        <div class="container">
+            <div class="max-w-xl mx-auto text-center mt-36">
+                <h4 class="font-semibold text-secondary text-3xl mb-4 font-kata text-nav poppins-medium">Partner</h4>
             </div>
-            <div class="w-full overflow-hidden shadow-xl rounded-lg" data-aos="zoom-out" data-aos-duration="1000">
+            <div class="w-full overflow-hidden rounded-lg" data-aos="zoom-out" data-aos-duration="1000">
                 <div class="flex space-x-16 p-16 animate-loop-scroll sm:flex sm:space-x-16 sm:p-16 sm:animate-loop-scroll whitespace-nowrap">
                     <img src="img/clients/Huawei-华为-Logo.png" alt="" class="aspect-[1.11] object-contain object-center w-[136px] self-center shrink-0 max-w-full my-auto">
                     <img src="img/clients/fiberhome.png" alt="" class="aspect-[1.11] object-contain object-center w-[136px] self-center shrink-0 max-w-full my-auto">
@@ -161,47 +157,47 @@
     </section>
 
     <!-- Contact start -->
-    <section id="Contact">
+    <section id="Contact" class="bg-blue-100 bg-opacity-30">
         <div class="container">
-            <div class="max-w-xl mx-auto text-center my-14 pt-36">
-                <h4 class="font-semibold uppercase text-secondary text-4xl mb-4">Contact</h4>
+            <div class="max-w-xl mx-auto text-center my-14 pt-36 text-nav poppins-medium">
+                <h4 class="font-semibold text-secondary text-3xl mb-4">Contact</h4>
             </div>
             <div class="flex flex-wrap lg:justify-around justify-center">
                 <div class="w-full px-4 mb-16 font-medium md:w-1/2 lg:w-1/2 lg:max-w-[390px] justify-center text-center">
-                    <div id="email" class="mb-4" data-aos="fade-right" data-aos-duration="2000">
-                        <p class="pl-2 mb-1 font-bold">Email</p>
-                        <button class="border border-black rounded-full p-2 hover:bg-nav hover:text-font w-[220px] text-center"><a href="mailto:info@senopatiitiartha.com">info@senopatiintiartha.com</a></button>
+                    <div id="email" class="mb-4">
+                        <p class="pl-2 mb-1 font-normal poppins-regular text-nav">Email</p>
+                        <button class="border border-black rounded-full p-2 hover:bg-nav hover:text-font w-[250px] text-center"><a href="mailto:info@senopatiitiartha.com" class="font-normal poppins-light">info@senopatiintiartha.com</a></button>
                     </div>
-                    <div id="No. Tlp" class="mb-4" data-aos="fade-left" data-aos-duration="2000">
-                        <p class="pl-2 mb-1 font-bold">No.Tlp</p>
-                        <button class="border border-black rounded-full p-2 hover:bg-nav hover:text-font w-[220px] text-center"><a href="https://wa.me/+62813-5325-4989">0813-5325-4989</a></button>
+                    <div id="No. Tlp" class="mb-4">
+                        <p class="pl-2 mb-1 font-normal poppins-regular text-nav">No.Telepon</p>
+                        <button class="border border-black rounded-full p-2 hover:bg-nav hover:text-font w-[250px] text-center"><a href="https://wa.me/+62813-5325-4989" class="font-normal poppins-light">0813-5325-4989</a></button>
                     </div>
-                    <div id="web" data-aos="fade-right" data-aos-duration="2000">
-                        <p class="pl-2 mb-1 font-bold">Website</p>
-                        <button class="border border-black rounded-full p-2 hover:bg-nav hover:text-font w-[220px] text-center"><a href="www.senopatiintiartha.com">www.senopatiintiartha.com</a></button>
+                    <div id="web">
+                        <p class="pl-2 mb-1 font-normal poppins-regular text-nav">Website</p>
+                        <button class="border border-black rounded-full p-2 hover:bg-nav hover:text-font w-[250px] text-center"><a href="www.senopatiintiartha.com" class="font-normal poppins-light">www.senopatiintiartha.com</a></button>
                     </div>
                 </div>
 
                 <form>
                     <div class="container">
-                        <div class="w-full px-4 mb-8" data-aos="fade-left" data-aos-duration="2000">
-                            <label for="name" class="text-sm font-bold">Nama <span class="text-red-600">*</span></label> <br>
+                        <div class="w-full px-4 mb-8">
+                            <label for="name" class="text-sm font-semibold poppins-regular text-nav">Nama <span class="text-red-600">*</span></label> <br>
                             <input type="text" id="name" class="w-[300px] mt-1 bg-gray-300 border border-black rounded-md p-1.5 focus:outline-none focus:shadow-black focus:shadow-lg hover:bg-opacity-50 hover:shadow-black hover:shadow-lg" required>
                         </div>
-                        <div class="w-full px-4 mb-8" data-aos="fade-right" data-aos-duration="2000">
-                            <label for="email" class="text-sm font-bold">Email <span class="text-red-600">*</span></label> <br>
+                        <div class="w-full px-4 mb-8">
+                            <label for="email" class="text-sm font-semibold poppins-regular text-nav ">Email <span class="text-red-600">*</span></label> <br>
                             <input type="email" id="email" class="w-[300px] mt-1 bg-gray-300 border border-black rounded-md p-1.5 focus:outline-none focus:shadow-black focus:shadow-lg hover:bg-opacity-50 hover:shadow-black hover:shadow-lg" required>
                         </div>
-                        <div class="w-full px-4 mb-8" data-aos="fade-left" data-aos-duration="2000">
-                            <label for="tlp" class="text-sm font-bold">No.Tlp</label> <br>
-                            <input type="text" id="tlp" class="w-[300px] mt-1 bg-gray-300 border border-black rounded-md p-1.5 focus:outline-none focus:shadow-black focus:shadow-lg hover:bg-opacity-50 hover:shadow-black hover:shadow-lg">
+                        <div class="w-full px-4 mb-8">
+                            <label for="tlp" class="text-sm font-semibold poppins-regular text-nav">No.Tlp <span class="text-red-600">*</span></label> <br>
+                            <input type="text" id="tlp" class="w-[300px] mt-1 bg-gray-300 border border-black rounded-md p-1.5 focus:outline-none focus:shadow-black focus:shadow-lg hover:bg-opacity-50 hover:shadow-black hover:shadow-lg" required>
                         </div>
-                        <div class="w-full px-4 mb-8" data-aos="fade-right" data-aos-duration="2000">
-                            <label for="pesan" class="text-sm font-bold">Pesan</label> <br>
+                        <div class="w-full px-4 mb-8">
+                            <label for="pesan" class="text-sm font-semibold poppins-regular text-nav">Pesan</label> <br>
                             <textarea name="pesan" id=""pesan class="w-[300px] h-[150px] mt-1 bg-gray-300 border border-black rounded-md p-1.5 focus:outline-none focus:shadow-black focus:shadow-lg hover:bg-opacity-50 hover:shadow-black hover:shadow-lg"></textarea>
                         </div>
-                        <div class="w-full px-4 mb-8" data-aos="fade-down" data-aos-duration="2000">
-                            <button class="w-[300px] border border-black rounded-full p-2 hover:bg-nav hover:text-font text-center">SUBMIT</button>
+                        <div class="w-full px-4 mb-8">
+                            <button class="w-[300px] border border-black rounded-full poppins-regular text-nav p-2 hover:bg-nav hover:text-font text-center">SUBMIT</button>
                         </div>
                     </div>
                 </form>
@@ -217,11 +213,11 @@
             <div class="flex flex-wrap justify-start">
                 <div class="w-full px-4 mb-16 text-font font-medium md:w-1/2 lg:w-1/4">
                     <img src="img/logo fix.png" alt="logo" class="float-left w-25 h-10">
-                    <p class="text-2xl font-bold mb-6 font-logo">SENOPATI INTI ARTHA</p>
-                    <p class="pr-10">PT. Senopati Inti Artha is a company engaged in logistics distribution with various services to meet a wider distribution segment of shipped goods</p>
+                    <p class="text-2xl font-bold mb-6 font-custom">SENOPATI INTI ARTHA</p>
+                    <p class="pr-10 poppins-regular">PT. Senopati Inti Artha is a company engaged in logistics distribution with various services to meet a wider distribution segment of shipped goods</p>
                 </div>
                 
-                <div class="w-ful px-4 mb-16 lg:pl-28 text-font font-medium md:w-1/2 lg:w-1/4">
+                <div class="w-ful px-4 mb-16 lg:pl-28 text-font font-medium md:w-1/2 lg:w-1/4 poppins-regular">
                     <h3 class="font-bold text-2xl mb-6">Menu</h3>
                     <p class="mb-2"><a href="index.html">Home</a></p>
                     <p class="mb-2"><a href="#About">About</a></p>
@@ -229,6 +225,31 @@
                     <p class="mb-2"><a href="#Partner">Partner</a></p>
                     <p class="mb-2"><a href="#Contact">Contact</a></p>
                 </div>
+
+                <div class="w-ful px-4 mb-16 lg:pl-28 text-font font-medium md:w-1/2 lg:w-1/4">
+                    <h3 class="font-bold text-2xl mb-6">Social Media</h3>
+                    <div class="flex items-center">
+                        <a href="#instagram" class="text-font px-2">
+                            <svg role="img" viewBox="0 0 24 24" width="20" class="fill-current" xmlns="http://www.w3.org/2000/svg">
+                                <title>Instagram</title>
+                                <path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                        </a>
+                        <a href="#facebook" class="text-font px-2">
+                            <svg role="img" viewBox="0 0 24 24" width="20" class="fill-current" xmlns="http://www.w3.org/2000/svg">
+                                <title>Facebook</title>
+                                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                        </a>
+                        <a href="#X" class="text-font px-2">
+                            <svg role="img" viewBox="0 0 24 24" class="fill-current" width="20" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                        </a>
+                        <a href="#Tiktok" class="text-font px-2">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current" width="20">
+                                <title>TikTok</title>
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
                 
                 <div class="w-full px-4 mb-16 text-font font-medium md:w-1/2 lg:w-1/4">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.8828385052884!2d106.89805007413007!3d-6.1464346602491045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f54f7d1e4637%3A0x4143300e4b7d3243!2sJl.%20Gading%20Kirana%20Tim.%20No.A-11%2F15%2C%20RT.18%2FRW.8%2C%20Klp.%20Gading%20Bar.%2C%20Kec.%20Klp.%20Gading%2C%20Jkt%20Utara%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2014240!5e0!3m2!1sid!2sid!4v1731554010542!5m2!1sid!2sid" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['index.html'],
+  content: ['index.html','about.html'],
   theme: {
     container:{
       center:true,
@@ -27,7 +27,7 @@ module.exports = {
         
       },
       fontFamily:{
-        logo:['Bridone'],
+        custom:['Bridone'],
       }
     },
   },
