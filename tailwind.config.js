@@ -9,17 +9,13 @@ module.exports = {
     },
     extend: {
       animation:{
-        "loop-scroll": "loop-scroll 10s linear infinite"
+        "loop-scroll": "loop-scroll 20s linear infinite"
       },
       keyframes:{
         "loop-scroll":{
           from:{transform:"translateX(0)"},
           to: {transform: "translateX(-100%)"},
         },
-      },
-      screens:{
-        'IphoneSE':'375px',
-        'IphoneXR':'414px',
       },
       colors: {
         font: '#fff000',
@@ -28,7 +24,7 @@ module.exports = {
         
       },
       fontFamily:{
-        custom:['Bridone'],
+        custom:['Bridone','Times new roman','Serif'],
       }
     },
   },
